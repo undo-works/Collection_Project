@@ -7,7 +7,7 @@ import java.util.List;
  * このクラスはCollectionインターフェースが持つ主なメソッドを使用します。
  * This class uses the main methods of the Collection interface.
  */
-public class Ordinary {
+public class OrdinaryList {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
 		
@@ -30,12 +30,16 @@ public class Ordinary {
 		System.out.println(list.contains("あいうえお")); //true
 		System.out.println(list.contains("たちつてと")); //false 
 		
+		//要素の削除
+		//複数は「boolean removeAll(Collection<?> c)」
+		System.out.println(list.remove("あいうえお")); //true
+		
 		//要素がすべて格納された配列を取得
 		Object[] objectArray = list.toArray();
-		System.out.println(objectArray[0]); //あいうえお
-		System.out.println(objectArray[1]); //かきくけこ
+		System.out.println(objectArray[0]); //かきくけこ
+		System.out.println(objectArray[1]); //さしすせそ
 		
-		
-		
+		//全ての要素の削除
+		list.clear();
 	}
 }
