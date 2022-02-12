@@ -19,11 +19,14 @@ public class OrdinaryList {
 		list.add("かきくけこ");
 		list.add("さしすせそ");
 		
+		//これだけはListインターフェースのメソッド
+		list.add(0, "わをん");
+		
 		//要素数の取得(int)
-		System.out.println(list.size()); //3
+		System.out.println(list.size()); //4
 		
 		//要素の取得
-		System.out.println(list.get(0)); //あいうえお
+		System.out.println(list.get(0)); //わをん
 		
 		//要素を含むか調べる 
 		//複数は「boolean containsAll(Collection<?> c)」
@@ -36,8 +39,8 @@ public class OrdinaryList {
 		
 		//要素がすべて格納された配列を取得
 		Object[] objectArray = list.toArray();
-		System.out.println(objectArray[0]); //かきくけこ
-		System.out.println(objectArray[1]); //さしすせそ
+		System.out.println(objectArray[1]); //かきくけこ
+		System.out.println(objectArray[2]); //さしすせそ
 		
 		//全ての要素の削除
 		list.clear();
