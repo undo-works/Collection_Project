@@ -22,6 +22,9 @@ public class OrdinaryList {
 		//これだけはListインターフェースのメソッド
 		list.add(0, "わをん");
 		
+		//リスト要素の全件取得
+		System.out.println(list); //[わをん, あいうえお, かきくけこ, さしすせそ]
+		
 		//要素数の取得(int)
 		System.out.println(list.size()); //4
 		

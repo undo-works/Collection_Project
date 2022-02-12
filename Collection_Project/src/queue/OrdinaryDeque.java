@@ -10,7 +10,7 @@ public class OrdinaryDeque {
 		Queue<String> queue = new ArrayDeque<String>();
 		
 		try {
-			//要素の追加
+			//先頭へ要素の追加
 			System.out.println(queue.add("あいうえお")); //true もし失敗したらIllegalStateExceptionが発生
 			System.out.println(queue.offer("かきくけこ")); //true もし失敗したらfalse
 			
